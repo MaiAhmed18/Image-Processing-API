@@ -19,14 +19,13 @@ Endpoint to resize images
 http://localhost:5000/api/images
 
 Expected query arguments are:
-  filename: Available filenames are:
-  encenadaport
-  fjord
-  icelandwaterfall
-  palmtunnel
-  santamonica
-  width: numerical pixel value > 0
-  height: numerical pixel value > 0
+  - filename:
+  Available filenames are:
+  encenadaport, fjord, icelandwaterfall, palmtunnel, santamonica
+  
+  - width: numerical pixel value > 0
+ 
+  - height: numerical pixel value > 0
 
 Example 1
 http://localhost:5000/api/images Will display a hint and list available image names.
