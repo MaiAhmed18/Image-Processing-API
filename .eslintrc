@@ -1,0 +1,30 @@
+{
+    "root": true,
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": 2 ,
+      "no-use-before-define": ["error", { "functions": true, "classes": true }],
+      "no-var": "error",
+      "prefer-const": "error",
+      "semi" : ["errors","always"],
+      "quotes" : ["errors","double"],
+      "lines-between-class-members": [
+      'error',
+      'always',
+      { 'exceptAfterSingleLine': true },
+    ]
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    }
+}
