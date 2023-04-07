@@ -1,15 +1,21 @@
-Scripts
+# Scripts
   Install: npm install
+  
   Build: npm run build
+  
   Lint: npm run lint
+  
   Prettify: npm run prettier
+  
   Run unit tests: npm run test
+  
   Start server: npm run start
 
-Usage
-The server will listen on port 5000:
+# Usage
+The server will listen on port 5000
 
 Endpoint to resize images
+
 http://localhost:5000/api/images
 
 Expected query arguments are:
@@ -43,6 +49,6 @@ http://localhost:3000/api/images?filename=palmtunnel&height=200 Will adjust the 
 Example 7
 http://localhost:3000/api/images?filename=test Will display a hint and list av.ailable image names.
 
-Notes
+# Notes
 Images are served from assets/full. Further images with the extension can be put into that directory, but the filetype is not checked (not required in exercise).
 Image thumbs will be stored in assets/thumb and can be deleted from there to verify that in that case they will be re-created on subsequent calls to the same endpoint.
